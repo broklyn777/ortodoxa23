@@ -1,7 +1,7 @@
 ---
 title: Drakars Vin och Änglars Bröd
 date: '2021-06-01'
-tags: ['vrede', 'synder', 'Odmjukhet', 'Evagrius Ponticus']
+tags: ['vrede', 'synder', 'Ödmjukhet', 'Evagrius Ponticus']
 draft: false
 summary: Drakars Vin och Änglars Bröd, Evagrius Ponticus undervisning om ilska och Ödmjukhet.
 images: []
