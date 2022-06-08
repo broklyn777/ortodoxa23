@@ -4,9 +4,8 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-import projectsData from '@/data/projectsData'
+
 import NewsletterForm from '@/components/NewsletterForm'
-import Card2 from '@/components/Card2'
 
 const MAX_DISPLAY = 5
 
@@ -29,18 +28,6 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
-        <div className=" grid grid-cols-1 gap-4 py-6 md:grid-cols-2 lg:grid-cols-3">
-          {projectsData.map((d) => (
-            <Card2
-              key={d.title}
-              title={d.title}
-              description={d.description}
-              imgSrc={d.imgSrc}
-              href={d.href}
-            />
-          ))}
-        </div>
-
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
