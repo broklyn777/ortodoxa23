@@ -9,6 +9,6 @@ linkedin: https://www.linkedin.com
 github: https://github.com
 ---
 
-Björn is a professor of atmospheric sciences and Philosophy at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Björn is a professor of atmospheric sciences and Philosophy at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and Crosswinds.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi and studying Theology.
