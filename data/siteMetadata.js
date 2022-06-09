@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'OrtodoXA',
   author: 'Björn',
   headerTitle: 'OrtodoXA',
-  description: 'en blogg om tro',
+  description: '...en blogg om tro',
   language: 'sv',
   theme: 'system', // system, dark or light
   siteUrl: '',

@@ -1,9 +1,10 @@
+/* eslint-disable prettier/prettier */
 import Image from 'next/image'
 import Link from '@/components/Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
   <div className="" style={{ maxWidth: '500' }}>
-    <div className="h-full overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700">
+    <div className="h-full overflow-hidden rounded-md border-2  border-gray-200 border-opacity-60 dark:border-gray-700">
       {href ? (
         <Link href={href} aria-label={`Link to ${title}`}>
           <Image
@@ -40,9 +41,11 @@ const Card = ({ title, description, imgSrc, href }) => (
         {href && (
           <Link
             href={href}
-            className="text-base font-medium leading-6 text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+            className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
-          ></Link>
+          >
+            Läs mer &rarr;
+          </Link>
         )}
       </div>
     </div>

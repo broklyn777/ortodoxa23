@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
@@ -7,6 +8,8 @@ import formatDate from '@/lib/utils/formatDate'
 import projectsData from '@/data/projectsData'
 import NewsletterForm from '@/components/NewsletterForm'
 import Card2 from '@/components/Card2'
+import Hero from '@/components/Hero'
+import Image from 'next/image'
 
 const MAX_DISPLAY = 5
 
@@ -20,16 +23,29 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="  divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-semibold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Senaste
+            OrtodoXA
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
             {siteMetadata.description}
           </p>
         </div>
-        <div className=" grid grid-cols-1 gap-4 py-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <div className=" h-full">
+          <div>
+            <div className="absolute top-0 left-0 -z-10 hidden h-[100vh] w-screen opacity-20 dark:block">
+              <Image
+                layout="fill"
+                alt="hero"
+                src="/static/ortodoxa/rökelse01.png"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+        </div>
+        {/* <div className=" grid grid-cols-1 gap-4 py-6 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((d) => (
             <Card2
               key={d.title}
@@ -39,7 +55,7 @@ export default function Home({ posts }) {
               href={d.href}
             />
           ))}
-        </div>
+        </div> */}
 
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
@@ -72,7 +88,7 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-100">
                           {summary}
                         </div>
                       </div>
