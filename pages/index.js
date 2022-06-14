@@ -13,7 +13,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import ReactPlayer from 'react-player'
 
-const MAX_DISPLAY = 3
+const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -44,7 +44,7 @@ export default function Home({ posts }) {
           </div>
         </div>
 
-        <div className=" grid grid-cols-1 gap-4 py-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className=" grid grid-cols-1 gap-4 py-6 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((d) => (
             <Card2
               key={d.title}
@@ -54,7 +54,7 @@ export default function Home({ posts }) {
               href={d.href}
             />
           ))}
-        </div>
+        </div> */}
 
         {siteMetadata.newsletter.provider !== '' && (
           <div className="my-10 mx-auto flex max-w-md items-center justify-center rounded-md bg-gray-100 pb-8 pt-4 dark:bg-gray-800">

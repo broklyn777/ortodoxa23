@@ -1,6 +1,6 @@
 ---
 title: Ortodoxa Dagliga Böner
-date: '2021-06-03'
+date: '2022-06-08'
 tags: ['Bön', 'ortodox', 'trosbekännelsen']
 draft: false
 summary: Ortodoxa dagliga böner. Bön är sinnets och hjärtans höjning till Gud i beröm, i tacksägelse och i framställning om de andliga och det materiella vi behöver. Vår Herre Jesus Kristus befallde oss att gå in i vårt inre rum och där be till Gud Fadern i hemlighet. Detta inre rum betyder hjärtat, kärnan i vårt väsen.
