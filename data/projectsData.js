@@ -13,17 +13,10 @@ const projectsData = [
     href: '/blog/synaxarion/symeon-styliten',
   },
   {
-    title: 'Ortodoxa Dagliga Böner',
+    title: 'Introduktion till Filokalia',
     description: `Bön är att höja sinnet och hjärtat till Gud i lovprisning, tacksägelse och bön om de andliga och materiella ting vi behöver. `,
-    imgSrc: '/static/images/theotokos1.jpeg',
-    href: '/blog/ortodoxa-boner',
-  },
-  {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go".`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    imgSrc: '/static/ortodoxa/filokalia-munk.png',
+    href: '/blog/filokalia/introduktion-till-philokalia',
   },
 ]
 

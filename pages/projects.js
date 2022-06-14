@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
+import Videox from '@/components/Videox'
 import { PageSEO } from '@/components/SEO'
 
 export default function Projects() {
@@ -13,9 +14,10 @@ export default function Projects() {
             Projekt
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Visa upp dina projekt med en bild (16 x 9)
+            Våra färdiga projekt med bild
           </p>
         </div>
+
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
             {projectsData.map((d) => (

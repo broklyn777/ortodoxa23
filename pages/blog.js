@@ -3,7 +3,7 @@ import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
 
-export const POSTS_PER_PAGE = 10
+export const POSTS_PER_PAGE = 6
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -17,6 +17,8 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts, initialDisplayPosts, pagination }) {
+  // console.log(posts)
+  // array from posts
   return (
     <>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />

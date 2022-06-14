@@ -10,8 +10,10 @@ import NewsletterForm from '@/components/NewsletterForm'
 import Card2 from '@/components/Card2'
 import Hero from '@/components/Hero'
 import Image from 'next/image'
+import { useState } from 'react'
+import ReactPlayer from 'react-player'
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 3
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -20,13 +22,14 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  const [isPlaying, setIsPlaying] = useState(true)
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="  divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-semibold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            OrtodoXA
+            Ortodoxa
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-100">
             {siteMetadata.description}
@@ -57,6 +60,12 @@ export default function Home({ posts }) {
           ))}
         </div>
 
+        {siteMetadata.newsletter.provider !== '' && (
+          <div className="flex items-center justify-center pt-4">
+            <NewsletterForm />
+          </div>
+        )}
+
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -66,7 +75,7 @@ export default function Home({ posts }) {
                 <article>
                   <div className="space-y-2 rounded-md p-4 dark:bg-gray-500/10 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
-                      <dt className="sr-only">Published on</dt>
+                      <dt className="sr-only">Publiserad den</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>{formatDate(date)}</time>
                       </dd>
@@ -118,11 +127,6 @@ export default function Home({ posts }) {
           >
             Alla artiklar &rarr;
           </Link>
-        </div>
-      )}
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
         </div>
       )}
     </>

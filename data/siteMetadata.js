@@ -1,11 +1,11 @@
 const siteMetadata = {
-  title: 'OrtodoXA',
+  title: 'Ortodoxa',
   author: 'Björn',
-  headerTitle: 'OrtodoXA',
+  headerTitle: 'Ortodoxa',
   description: '...en blogg om tro',
   language: 'sv',
   theme: 'system', // system, dark or light
-  siteUrl: '',
+  siteUrl: 'https://ortodoxa-22.vercel.app/',
   siteRepo: '',
   siteLogo: '/static/images/orthodox-cros.jpeg',
   image: '/static/images/orthodox-cros.jpeg',
