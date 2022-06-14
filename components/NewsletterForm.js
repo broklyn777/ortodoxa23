@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 
 import siteMetadata from '@/data/siteMetadata'
 
-const NewsletterForm = ({ title = 'Prenumerera på nyhetsbrevet' }) => {
+const NewsletterForm = ({ title = 'Prenumerera på vårt nyhetsbrev' }) => {
   const inputEl = useRef(null)
   const [error, setError] = useState(false)
   const [message, setMessage] = useState('')
@@ -24,14 +24,14 @@ const NewsletterForm = ({ title = 'Prenumerera på nyhetsbrevet' }) => {
     const { error } = await res.json()
     if (error) {
       setError(true)
-      setMessage('Your e-mail address is invalid or you are already subscribed!')
+      setMessage('Din e-postadress är ogiltig eller så prenumererar du redan!')
       return
     }
 
     inputEl.current.value = ''
     setError(false)
     setSubscribed(true)
-    setMessage('Successfully! 🎉 You are now subscribed.')
+    setMessage('Success! 🎉 Du prenumererar nu.')
   }
 
   return (

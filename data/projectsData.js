@@ -7,7 +7,7 @@ const projectsData = [
   },
 
   {
-    title: 'Symeon Styliten d.ä',
+    title: 'Symeon Styliten den äldre',
     description: `Symeon Styliten (ca 390-459) var en syrisk kristen asketiker som bla levde levde 37 år på en liten plattform. `,
     imgSrc: '/static/ortodoxa/symeon-stylite02.png',
     href: '/blog/synaxarion/symeon-styliten',

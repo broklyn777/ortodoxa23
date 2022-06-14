@@ -8,7 +8,7 @@ import formatDate from '@/lib/utils/formatDate'
 import projectsData from '@/data/projectsData'
 import NewsletterForm from '@/components/NewsletterForm'
 import Card2 from '@/components/Card2'
-import Hero from '@/components/Hero'
+
 import Image from 'next/image'
 import { useState } from 'react'
 import ReactPlayer from 'react-player'
@@ -39,15 +39,11 @@ export default function Home({ posts }) {
         <div className=" h-full">
           <div>
             <div className="absolute top-0 left-0 -z-10 hidden h-[100vh] w-screen opacity-20 dark:block">
-              <Image
-                layout="fill"
-                alt="hero"
-                src="/static/ortodoxa/rökelse-03.jpg"
-                objectFit="cover"
-              />
+              <Image layout="fill" alt="" src="/static/ortodoxa/rökelse-03.jpg" objectFit="cover" />
             </div>
           </div>
         </div>
+
         <div className=" grid grid-cols-1 gap-4 py-6 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((d) => (
             <Card2
@@ -61,7 +57,7 @@ export default function Home({ posts }) {
         </div>
 
         {siteMetadata.newsletter.provider !== '' && (
-          <div className="flex items-center justify-center pt-4">
+          <div className="my-10 mx-auto flex max-w-md items-center justify-center rounded-md bg-gray-100 pb-8 pt-4">
             <NewsletterForm />
           </div>
         )}

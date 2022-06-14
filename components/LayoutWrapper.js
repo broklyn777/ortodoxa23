@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
@@ -16,15 +17,17 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  {/* <Logo /> */}
+                  <h2 className="pl-5 text-2xl font-semibold text-primary-500">Hem</h2>
                 </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
+
+                {/* {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
                   siteMetadata.headerTitle
-                )}
+                )} */}
               </div>
             </Link>
           </div>
