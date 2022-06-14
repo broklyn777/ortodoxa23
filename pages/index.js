@@ -57,7 +57,7 @@ export default function Home({ posts }) {
         </div>
 
         {siteMetadata.newsletter.provider !== '' && (
-          <div className="my-10 mx-auto flex max-w-md items-center justify-center rounded-md bg-gray-100 pb-8 pt-4">
+          <div className="my-10 mx-auto flex max-w-md items-center justify-center rounded-md bg-gray-100 pb-8 pt-4 dark:bg-gray-800">
             <NewsletterForm />
           </div>
         )}
