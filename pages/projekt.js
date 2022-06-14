@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import FunPlayer from '@/components/FunPlayer'
+
 import Head from 'next/head'
 
 export default function Projekt() {
@@ -12,11 +12,6 @@ export default function Projekt() {
       <h1 className=" hidden border-b-4 p-5 text-5xl font-semibold text-primary-500 md:block">
         Projekt
       </h1>
-
-      <FunPlayer url="https://www.youtube.com/watch?v=z9Eo8gFOMp0" />
-
-      <FunPlayer url="https://www.youtube.com/watch?v=sNFteclBopw" />
-      <FunPlayer url="https://youtu.be/lCra8jUrlUQ" />
 
       <div className="prose lg:prose-xl">
         <h1>Hur gör man en Tonfisksallad med ägg - (Recept - God och Låg kalori)</h1>
