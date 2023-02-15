@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 /* eslint-disable prettier/prettier */
+import CalendarComponent from '@/components/CalendarComponent'
 import { useState } from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css'
@@ -12,6 +13,7 @@ function Synaxarion() {
       <div className="app">
         <h1 className="text-center text-xl">Ortodox Kalender</h1>
         <div className="calendar-container">
+          <CalendarComponent />
           <Calendar
             onChange={setDate}
             value={date}
