@@ -1,0 +1,90 @@
+/* synaxarium.css */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(103, 101, 101);
+  margin-bottom: 8px;
+}
+
+/* Stil för fotnotsnumret */
+.footnote-ref {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Stil för tooltip-rutan */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  /* font-weight: 400; */
+}
+
+/* Stil för tooltip-texten */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Placeringen av tooltip-rutan */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -150px;
+}
+
+/* Visa tooltip-rutan när användaren hovrar över fotnotsnumret */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.footnote-number {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgb(17, 187, 167);
+  padding-right: 0.2em;
+}
+
+.footnote-number::before {
+  content: attr(data-footnote-number);
+  margin-right: 0.2em;
+}
+/* Skriv all vanlig CSS här */
+
+/* Media queries för mindre skärmar */
+@media screen and (max-width: 768px) {
+  /* Centrera texten på mindre skärmar */
+  .content {
+    text-align: center;
+  }
+
+  /* Gör fotnoter mindre på mindre skärmar */
+  .tooltip {
+    font-size: 0.8em;
+  }
+
+  /* Lägg till marginaler för att separera fotnoter från texten på mindre skärmar */
+  .tooltip + span {
+    margin-left: 0.5em;
+  }
+}

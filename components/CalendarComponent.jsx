@@ -4,6 +4,7 @@ import Calendar from 'react-calendar'
 import moment from 'moment-timezone'
 import events from 'data/staticdata'
 import 'react-calendar/dist/Calendar.css'
+import Link from 'next/link'
 
 function CalendarComponent() {
   const [selectedEvent, setSelectedEvent] = useState(null)
@@ -24,9 +25,9 @@ function CalendarComponent() {
           <>
             <h2>{selectedEvent.title}</h2>
             <p>{selectedEvent.description}</p>
-            <a href={selectedEvent.link} target="_blank" rel="noopener noreferrer">
-              Läs mer
-            </a>
+            <Link legacyBehavior href={{ pathname: selectedEvent.link }}>
+              <a>Läs mer</a>
+            </Link>
           </>
         )}
       </>
