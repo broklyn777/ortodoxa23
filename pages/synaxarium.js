@@ -9,21 +9,19 @@ function Synaxarion() {
   const [date, setDate] = useState(new Date())
   return (
     <>
-      <div>synaxarion</div>
-      <div className="app">
-        <h1 className="text-center text-xl">Ortodox Kalender</h1>
-        <div className="calendar-container">
-          <CalendarComponent />
-          <Calendar
-            onChange={setDate}
-            value={date}
-
-            // onClick={"hello", "world"} onChange
-          />
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="text-3xl font-semibold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Synaxarion
+          </h1>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">en Ortodox Kalender</p>
         </div>
-        <p className="text-center">
-          <span className="bold">Valt datum:</span> {date.toLocaleDateString('sv-SV')}
-        </p>
+        <div></div>
+        <div className="app">
+          <div className="calendar-container">
+            <CalendarComponent />
+          </div>
+        </div>
       </div>
     </>
   )

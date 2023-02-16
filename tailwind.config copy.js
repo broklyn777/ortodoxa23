@@ -15,11 +15,6 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      calendar: {
-        tile: {
-          backgroundColor: 'gray-800',
-        },
-      },
       spacing: {
         '9/16': '56.25%',
       },
