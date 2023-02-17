@@ -11,11 +11,11 @@ const siteMetadata = {
   image: '/static/images/orthodox-cros.jpeg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'address@yoursite.com',
-  github: 'https://github.com',
+  // github: 'https://github.com',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  // linkedin: 'https://www.linkedin.com',
   locale: 'sv',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

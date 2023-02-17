@@ -37,6 +37,13 @@ const events = [
     description: 'Förmedlade den östliga munktraditionens ljus till Väst',
     link: '/ortodoxa/ortodoxa-boner',
   },
+  {
+    id: 7,
+    date: '2023-02-05',
+    title: 'Heliga Agatha av Palermo',
+    description: 'En av de mest berömda martyrerna.',
+    link: '/blog/synaxarion/heliga-agatha-av-palermo',
+  },
 ]
 
 export default events

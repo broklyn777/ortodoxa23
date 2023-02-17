@@ -16,11 +16,9 @@ function Synaxarion() {
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">en Ortodox Kalender</p>
         </div>
-        <div></div>
-        <div className="app">
-          <div className="calendar-container">
-            <CalendarComponent />
-          </div>
+
+        <div className="">
+          <CalendarComponent />
         </div>
       </div>
     </>

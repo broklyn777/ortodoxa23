@@ -29,7 +29,7 @@ function CalendarComponent() {
      ortodoxa kyrkan är synaxarion i dag en förkortad samling av Helgonens liv.
      "
       />
-      <div className="flex h-screen items-center justify-center">
+      <div className="flex  items-center justify-center pt-10">
         <div className="">
           {/* <h1>Min ortodoxa kalender</h1> */}
           {/* Visa valt datum */}
@@ -39,8 +39,8 @@ function CalendarComponent() {
             {selectedEvent && (
               <>
                 <div>
-                  <h2 className="text-bold text-center">{selectedEvent.title}</h2>
-                  <p>{selectedEvent.description}</p>
+                  <h2 className="text-center font-bold">{selectedEvent.title}</h2>
+                  <p className="text-center">{selectedEvent.description}</p>
                   <Link legacyBehavior href={{ pathname: selectedEvent.link }}>
                     <a className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
                       {' '}
