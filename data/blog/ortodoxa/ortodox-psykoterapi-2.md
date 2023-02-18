@@ -2,7 +2,7 @@
 title: Ortodox Psykoterapi 2
 date: '2021-05-06'
 tags: ['undervisning', 'ortodox', 'Ortodox Psykoterapi']
-draft: false
+draft: true
 summary: Enligt de ortodoxa fäderna består människan av kropp och själ där själen skapas tillsammans med kroppen i konceptionsögonblicket. I takt med att kroppen växer och utvecklas, manifesteras också själens energier allt mer.
 images: []
 ---

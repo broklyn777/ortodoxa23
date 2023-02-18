@@ -2,7 +2,7 @@
 title: Ortodox Psykoterapi
 date: '2021-05-05'
 tags: ['undervisning', 'ortodox', 'Ortodox Psykoterapi']
-draft: false
+draft: true
 summary: Fädernas undervisning om ortodox teologi, och att visa att det i första hand är frågan om en ”vetenskap om helandet av människan”. Han uttrycker det så att han med denna bok, och även hans andra böcker, försöker överföra den ortodoxa andligheten från Filokalian till den rastlösa och oroliga nutidsmänniskan.
 images: []
 ---
