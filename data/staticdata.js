@@ -44,6 +44,14 @@ const events = [
     description: 'En av de mest berömda martyrerna.',
     link: '/blog/synaxarion/heliga-agatha-av-palermo',
   },
+  {
+    id: 8,
+    date: '2023-01-21',
+    title: 'Maximus Bekännaren',
+    description:
+      'Maximus Bekännaren var en av den ortodoxa kyrkans mest betydande teologer och mystiker.',
+    link: '/blog/synaxarion/maximus-bekannaren',
+  },
 ]
 
 export default events

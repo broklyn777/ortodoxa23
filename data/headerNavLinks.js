@@ -4,7 +4,7 @@ const headerNavLinks = [
   { href: '/synaxarium', title: 'Synaxarium' },
   // { href: '/projekt-light', title: 'projekt-light' },
   // { href: '/projekt', title: 'projektxx' },
-  // { href: '/projects', title: 'Projekt' },
+  { href: '/projects', title: 'Projekt' },
   { href: '/om-oss', title: 'Om' },
   // { href: '/google', title: 'google' },
 ]
