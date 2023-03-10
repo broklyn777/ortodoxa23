@@ -14,7 +14,7 @@ export default function Projects() {
             Projekt
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Våra färdiga projekt med bild
+            Våra färdiga och påbörjade projekt
           </p>
         </div>
 

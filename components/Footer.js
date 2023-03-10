@@ -19,7 +19,7 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="https://www.aftonbladet.se/">hej</Link>
+          <Link href="/om-oss">Ortodoxa</Link>
           {/* <Link href="/">{siteMetadata.title}</Link> */}
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
