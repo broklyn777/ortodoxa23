@@ -18,6 +18,12 @@ const projectsData = [
     imgSrc: '/static/ortodoxa/filokalia-munk.png',
     href: '/blog/filokalia/introduktion-till-philokalia',
   },
+  {
+    title: 'Ortodox Psykoterapi',
+    description: `Utforska den ortodoxa synen på människans psykologi och andlighet samt betona betydelsen av tyst bön och meditation för andlig och psykologisk terapi. `,
+    imgSrc: '/static/ortodoxa/synaxarion.JPG',
+    href: '/blog/ortodox-psykoterapi/ortodox-psykoterapi-innehall',
+  },
 ]
 
 export default projectsData

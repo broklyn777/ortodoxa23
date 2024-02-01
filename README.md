@@ -1,3 +1,9 @@
+git add -A
+
+git commit -m "Ditt commit-meddelande",
+
+git push origin master eller git push origin main.
+
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog
