@@ -21,7 +21,7 @@ const projectsData = [
   {
     title: 'Ortodox Psykoterapi',
     description: `Utforska den ortodoxa synen på människans psykologi och andlighet samt betona betydelsen av tyst bön och meditation för andlig och psykologisk terapi. `,
-    imgSrc: '/static/ortodoxa/synaxarion.JPG',
+    imgSrc: '/static/ortodoxa/jesus-and-evilspirit02.webp',
     href: '/blog/ortodox-psykoterapi/ortodox-psykoterapi-innehall',
   },
 ]
